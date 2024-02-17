@@ -114,8 +114,10 @@ const Autocomplete = ({ list }: Props) => {
                 alt={option.name}
                 width={100} height={100}
               />
-              <span>{option.episodesPlayIn}</span>
-              <span>{boldedText(option.name, getInputProps().value as string)}</span>
+              <Stack direction="column" spacing={1}>
+                <span style={{ fontSize: 'large' }}>{boldedText(option.name, getInputProps().value as string)}</span>
+                <span style={{ color: 'gray' }}>{option.episodesPlayIn} Episodes</span>
+              </Stack>
             </Stack>
           </li>
         ))}

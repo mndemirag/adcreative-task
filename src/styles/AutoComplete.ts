@@ -77,7 +77,7 @@ export const Listbox = styled('ul')`
   }
 
   & li.${autocompleteClasses.focused} {
-    background-color: #e6f7ff;
+    background-color: '#e6f7ff';
     cursor: pointer;
 
     & svg {
@@ -122,7 +122,7 @@ export const ListBox = styled('ul')`
   }
 
   & li.${autocompleteClasses.focused} {
-    background-color: #e6f7ff;
+    background-color: #F5F5F5;
     cursor: pointer;
 
     & svg {
